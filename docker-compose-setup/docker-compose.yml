@@ -1,0 +1,13 @@
+services:
+  docker:
+    build: "../docker"
+    image: docker
+    container_name: docker
+    ports:
+      - "3000:3000"
+  docker-2:
+    build: "../docker-2"
+    image: docker-2
+    container_name: docker-2
+    ports:
+      - "3010:3000"
